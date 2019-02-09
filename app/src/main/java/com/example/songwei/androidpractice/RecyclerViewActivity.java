@@ -1,13 +1,12 @@
 package com.example.songwei.androidpractice;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.songwei.androidpractice.adapter.RecyclerViewAdapter;
+import com.example.songwei.androidpractice.adapters.RecyclerViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
