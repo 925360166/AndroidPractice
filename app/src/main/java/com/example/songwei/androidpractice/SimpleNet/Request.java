@@ -1,6 +1,7 @@
 package com.example.songwei.androidpractice.SimpleNet;
 
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -16,6 +17,11 @@ public abstract class Request<T> implements Comparable<Request<T>> {
 
     //默认的编码方式
     private static final String DEFAULT_PARAMS_ENCODING = "UTF-8";
+    /**
+     * Default Content-type
+     */
+    public final static String HEADER_CONTENT_TYPE = "Content-Type";
+
     //请求序列号
     protected int mSerialNum = 0;
     //优先级默认设置为Normal
@@ -59,6 +65,7 @@ public abstract class Request<T> implements Comparable<Request<T>> {
         if(mRequestListener != null){
             int stCode = response != null ? response.getStatusCode() : -1;
             String msg = response != null ? response.getMessage() : "unknown error";
+            Log.e("", "### 执行回调 : stCode = " + stCode + ", result : " + result + ", err : " + msg);
             mRequestListener.onComplete(stCode, result, msg);
         }
     }
@@ -101,6 +108,23 @@ public abstract class Request<T> implements Comparable<Request<T>> {
 
     public Map<String, String> getParams(){
         return mBodyParams;
+    }
+
+    public boolean isHttps() {
+        return mUrl.startsWith("https");
+    }
+
+    /**
+     * 该请求是否应该缓存
+     *
+     * @param shouldCache
+     */
+    public void setShouldCache(boolean shouldCache) {
+        this.mShouldCache = shouldCache;
+    }
+
+    public boolean shouldCache() {
+        return mShouldCache;
     }
 
     public void cancel(){
