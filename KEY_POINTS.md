@@ -8,3 +8,8 @@
 
 3、由浅入深理解java集合(一)——集合框架 Collection、Map
     https://www.jianshu.com/p/589d58033841
+
+4、2018中高阶Android面试题总结 上（附答案）
+    https://www.jianshu.com/p/a84ef9b7d588
+   2018中高阶Android面试题总结 下（附答案）
+    https://www.jianshu.com/p/4cd8eba7fa82
