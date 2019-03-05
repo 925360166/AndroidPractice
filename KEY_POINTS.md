@@ -5,3 +5,6 @@
 2、排序算法的比较与java实现
     https://www.jianshu.com/p/8c915179fd02
     https://www.jianshu.com/p/1b8d49a12086
+
+3、由浅入深理解java集合(一)——集合框架 Collection、Map
+    https://www.jianshu.com/p/589d58033841
