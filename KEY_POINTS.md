@@ -16,3 +16,12 @@
 
 5、分享 Android 阿里p7级完整知识体系脑图
     https://www.jianshu.com/p/4acad9bc06c6
+    
+6、aidl：
+    https://blog.csdn.net/u010335298/article/details/52528988
+    https://www.jianshu.com/p/23612b2cce30
+    https://www.jianshu.com/p/a7d8d37aa69c
+    
+7、Binder:
+    http://weishu.me/2016/01/12/binder-index-for-newer/
+    
