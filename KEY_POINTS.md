@@ -22,6 +22,11 @@
     https://www.jianshu.com/p/23612b2cce30
     https://www.jianshu.com/p/a7d8d37aa69c
     
+    Android：学习AIDL，这一篇文章就够了(上)
+        https://www.jianshu.com/p/a8e43ad5d7d2
+    Android：学习AIDL，这一篇文章就够了(下)
+        https://www.jianshu.com/p/0cca211df63c
+    
 7、Binder:
     http://weishu.me/2016/01/12/binder-index-for-newer/
     
