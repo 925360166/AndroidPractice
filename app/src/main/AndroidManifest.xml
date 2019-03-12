@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".AIDL.AIDLActivity" />
 
         <service
             android:name=".AIDL.AIDLService"

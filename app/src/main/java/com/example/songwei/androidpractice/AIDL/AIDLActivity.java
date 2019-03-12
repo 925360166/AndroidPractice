@@ -77,8 +77,8 @@ public class AIDLActivity extends AppCompatActivity {
      */
     private void attemptToBindService() {
         Intent intent = new Intent();
-        intent.setAction("com.lypeer.aidl");
-        intent.setPackage("com.lypeer.ipcserver");
+        intent.setAction("com.example.songwei.aidl");
+        intent.setPackage("com.example.songwei.androidpractice");
         bindService(intent, mServiceConnection, Context.BIND_AUTO_CREATE);
     }
 
