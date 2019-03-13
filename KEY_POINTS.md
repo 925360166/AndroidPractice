@@ -26,6 +26,8 @@
         https://www.jianshu.com/p/a8e43ad5d7d2
     Android：学习AIDL，这一篇文章就够了(下)
         https://www.jianshu.com/p/0cca211df63c
+    你真的理解AIDL中的in，out，inout么？
+        https://blog.csdn.net/luoyanglizi/article/details/51958091
     
 7、Binder:
     http://weishu.me/2016/01/12/binder-index-for-newer/

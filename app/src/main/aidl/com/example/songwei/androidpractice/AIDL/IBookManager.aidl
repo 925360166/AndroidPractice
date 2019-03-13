@@ -1,4 +1,4 @@
-// BookManager.aidl
+// IBookManager.aidl
 //第二类AIDL文件
 //作用是定义方法接口
 package com.example.songwei.androidpractice.AIDL;
@@ -8,7 +8,7 @@ package com.example.songwei.androidpractice.AIDL;
 //导入所需要使用的非默认支持的数据类型的包
 import com.example.songwei.androidpractice.AIDL.Book;
 
-interface BookManager {
+interface IBookManager {
     /**
      * Demonstrates some basic types that you can use as parameters
      * and return values in AIDL.

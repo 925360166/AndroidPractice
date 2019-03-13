@@ -18,15 +18,26 @@
         </activity>
 
         <activity android:name=".RecyclerViewActivity" />
-        <activity android:name=".AIDL.AIDLActivity" />
+        <activity android:name=".AIDL.AIDLBookActivity" />
+        <activity android:name=".AIDL.AIDLRestaurantActivity" />
 
         <service
-            android:name=".AIDL.AIDLService"
-            android:process=":remote"
-            android:exported="true">
+            android:name=".AIDL.BookService"
+            android:exported="true"
+            android:process="com.songwei.aidl.book">
             <intent-filter>
-                <action android:name="com.example.songwei.aidl"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.example.songwei.aidl.book" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".AIDL.RestaurantService"
+            android:exported="true"
+            android:process="com.songwei.aidl.restaurant">
+            <intent-filter>
+                <action android:name="com.example.songwei.aidl.restaurant" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
 

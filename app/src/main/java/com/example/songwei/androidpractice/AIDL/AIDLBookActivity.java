@@ -20,12 +20,12 @@ import java.util.List;
 /**
  * AIDL通信的客户端
  */
-public class AIDLActivity extends AppCompatActivity {
+public class AIDLBookActivity extends AppCompatActivity {
 
-    private static final String TAG = "AIDLActivity";
+    private static final String TAG = "AIDLBookActivity";
 
     //由AIDL文件生成的java类
-    private BookManager mBookManager = null;
+    private IBookManager mIBookManager = null;
 
     //标志当前与服务端连接状况的布尔值，false为未连接，true为连接中
     private boolean mBound = false;
@@ -36,7 +36,7 @@ public class AIDLActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aidl);
+        setContentView(R.layout.activity_aidl_book);
     }
 
     /**
@@ -51,13 +51,13 @@ public class AIDLActivity extends AppCompatActivity {
             Toast.makeText(this, "当前与服务端处于未连接状态，正在尝试重连，请稍后再试", Toast.LENGTH_SHORT).show();
             return;
         }
-        if (mBookManager == null) return;
+        if (mIBookManager == null) return;
 
         Book book = new Book();
         book.setName("APP研发录In");
         book.setPrice(30);
         try {
-            mBookManager.addBook(book);
+            mIBookManager.addBook(book);
             Log.e(getLocalClassName(), book.toString());
         } catch (RemoteException e) {
             e.printStackTrace();
@@ -77,7 +77,7 @@ public class AIDLActivity extends AppCompatActivity {
      */
     private void attemptToBindService() {
         Intent intent = new Intent();
-        intent.setAction("com.example.songwei.aidl");
+        intent.setAction("com.example.songwei.aidl.book");
         intent.setPackage("com.example.songwei.androidpractice");
         bindService(intent, mServiceConnection, Context.BIND_AUTO_CREATE);
     }
@@ -94,14 +94,14 @@ public class AIDLActivity extends AppCompatActivity {
     private ServiceConnection mServiceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            Toast.makeText(AIDLActivity.this, "已建立连接", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AIDLBookActivity.this, "已建立连接", Toast.LENGTH_SHORT).show();
             Log.e(TAG, "service connected");
-            mBookManager = BookManager.Stub.asInterface(service);
+            mIBookManager = IBookManager.Stub.asInterface(service);
             mBound = true;
 
-            if (mBookManager != null) {
+            if (mIBookManager != null) {
                 try {
-                    mBooks = mBookManager.getBooks();
+                    mBooks = mIBookManager.getBooks();
                     Log.e(TAG, mBooks.toString());
                 } catch (RemoteException e) {
                     e.printStackTrace();
@@ -111,9 +111,13 @@ public class AIDLActivity extends AppCompatActivity {
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            Toast.makeText(AIDLActivity.this, "连接已断开", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AIDLBookActivity.this, "连接已断开", Toast.LENGTH_SHORT).show();
             Log.e(TAG, "service disconnected");
             mBound = false;
         }
     };
+
+    public static void showAIDLBookActivity(Context context) {
+        context.startActivity(new Intent(context, AIDLBookActivity.class));
+    }
 }

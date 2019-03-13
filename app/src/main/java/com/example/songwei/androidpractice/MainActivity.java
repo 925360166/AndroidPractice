@@ -1,12 +1,14 @@
 package com.example.songwei.androidpractice;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.songwei.androidpractice.AIDL.AIDLActivity;
+import com.example.songwei.androidpractice.AIDL.AIDLBookActivity;
+import com.example.songwei.androidpractice.AIDL.AIDLRestaurantActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -17,19 +19,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
     }
 
+
+    //TODO: 添加测试页面时，在此补充 fixme
     private void initView() {
         findViewById(R.id.button1).setOnClickListener(this);
         findViewById(R.id.button2).setOnClickListener(this);
+        findViewById(R.id.button3).setOnClickListener(this);
     }
 
+    //TODO: 添加测试页面时，在此补充 fixme
     @Override
     public void onClick(View view) {
+        Context context = MainActivity.this;
         switch (view.getId()) {
             case R.id.button1:
-                showRecyclerView();
+                RecyclerViewActivity.showRecyclerView(context);
                 break;
             case R.id.button2:
-                showAIDLActivity();
+                AIDLBookActivity.showAIDLBookActivity(context);
+                break;
+            case R.id.button3:
+                AIDLRestaurantActivity.showAIDLRestaurantActivity(context);
                 break;
             default:
                 Toast.makeText(MainActivity.this, "无效跳转", Toast.LENGTH_SHORT).show();
@@ -37,11 +47,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void showRecyclerView() {
-        startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
-    }
-
-    private void showAIDLActivity() {
-        startActivity(new Intent(MainActivity.this, AIDLActivity.class));
-    }
 }

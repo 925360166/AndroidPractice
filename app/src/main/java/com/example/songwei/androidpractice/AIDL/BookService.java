@@ -10,14 +10,14 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AIDLService extends Service {
+public class BookService extends Service {
 
-    public static final String TAG = "AIDLService";
+    public static final String TAG = "BookService";
 
     private List<Book> mBooks = new ArrayList<>();
 
     //由AIDL文件生成的BookManager
-    private final BookManager.Stub mBookManager = new BookManager.Stub() {
+    private final IBookManager.Stub mBookManager = new IBookManager.Stub() {
 
         @Override
         public List<Book> getBooks() throws RemoteException {

@@ -1,5 +1,7 @@
 package com.example.songwei.androidpractice;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -30,5 +32,9 @@ public class RecyclerViewActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new RecyclerViewAdapter(list);
         recyclerView.setAdapter(adapter);
+    }
+
+    public static void showRecyclerView(Context context) {
+        context.startActivity(new Intent(context, RecyclerViewActivity.class));
     }
 }
