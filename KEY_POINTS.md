@@ -18,9 +18,10 @@
     https://www.jianshu.com/p/4acad9bc06c6
     
 6、aidl：
-    https://blog.csdn.net/u010335298/article/details/52528988
-    https://www.jianshu.com/p/23612b2cce30
-    https://www.jianshu.com/p/a7d8d37aa69c
+    学习AIDL，这一篇文章就够了
+        https://blog.csdn.net/u010335298/article/details/52528988
+    三步掌握Android中的AIDL
+        https://www.jianshu.com/p/23612b2cce30
     
     Android：学习AIDL，这一篇文章就够了(上)
         https://www.jianshu.com/p/a8e43ad5d7d2
