@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.songwei.androidpractice">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +24,8 @@
         <activity android:name=".AIDL.AIDLBookActivity" />
         <activity android:name=".AIDL.AIDLRestaurantActivity" />
         <activity android:name=".AIDL.Messenger.MessengerActivity" />
+        <activity android:name=".AIDL.ContentProvider.ProviderActivity" />
+        <activity android:name=".AIDL.Socket.TCPClientActivity" />
 
         <service
             android:name=".AIDL.BookService"
@@ -46,11 +51,23 @@
             android:name=".AIDL.Messenger.MessengerService"
             android:exported="true"
             android:process=":messenger">
-        <intent-filter>
-            <action android:name="com.example.songwei.aidl.messenger" />
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="com.example.songwei.aidl.messenger" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </service>
+
+        <service
+            android:name=".AIDL.Socket.TCPServerService"
+            android:exported="true"
+            android:process=":socket">
+        </service>
+
+        <provider
+            android:name=".AIDL.ContentProvider.BookProvider"
+            android:authorities="com.example.songwei.aidl.provider"
+            android:permission="com.example.songwei.aidl.PROVIDER"
+            android:process=":provider" />
 
     </application>
 

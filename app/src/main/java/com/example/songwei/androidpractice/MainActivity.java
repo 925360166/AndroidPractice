@@ -9,7 +9,9 @@ import android.widget.Toast;
 
 import com.example.songwei.androidpractice.AIDL.AIDLBookActivity;
 import com.example.songwei.androidpractice.AIDL.AIDLRestaurantActivity;
+import com.example.songwei.androidpractice.AIDL.ContentProvider.ProviderActivity;
 import com.example.songwei.androidpractice.AIDL.Messenger.MessengerActivity;
+import com.example.songwei.androidpractice.AIDL.Socket.TCPClientActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -27,6 +29,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button2).setOnClickListener(this);
         findViewById(R.id.button3).setOnClickListener(this);
         findViewById(R.id.button4).setOnClickListener(this);
+        findViewById(R.id.button5).setOnClickListener(this);
+        findViewById(R.id.button6).setOnClickListener(this);
+        findViewById(R.id.button7).setOnClickListener(this);
+        findViewById(R.id.button8).setOnClickListener(this);
+        findViewById(R.id.button9).setOnClickListener(this);
+        findViewById(R.id.button10).setOnClickListener(this);
     }
 
     //TODO: 添加测试页面时，在此补充 fixme
@@ -45,6 +53,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button4:
                 MessengerActivity.startActivity(context);
+                break;
+            case R.id.button5:
+                ProviderActivity.startActivity(context);
+                break;
+            case R.id.button6:
+                TCPClientActivity.startActivity(context);
+                break;
+            case R.id.button7:
+
+                break;
+            case R.id.button8:
+
+                break;
+            case R.id.button9:
+
+                break;
+            case R.id.button10:
+
                 break;
             default:
                 Toast.makeText(MainActivity.this, "无效跳转", Toast.LENGTH_SHORT).show();
