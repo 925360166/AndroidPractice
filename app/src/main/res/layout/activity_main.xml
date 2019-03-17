@@ -46,7 +46,8 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button4"
+        android:text="AIDL测试-Messenger测试"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 

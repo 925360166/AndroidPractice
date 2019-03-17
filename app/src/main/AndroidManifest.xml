@@ -20,6 +20,7 @@
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".AIDL.AIDLBookActivity" />
         <activity android:name=".AIDL.AIDLRestaurantActivity" />
+        <activity android:name=".AIDL.Messenger.MessengerActivity" />
 
         <service
             android:name=".AIDL.BookService"
@@ -39,6 +40,16 @@
                 <action android:name="com.example.songwei.aidl.restaurant" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </service>
+
+        <service
+            android:name=".AIDL.Messenger.MessengerService"
+            android:exported="true"
+            android:process=":messenger">
+        <intent-filter>
+            <action android:name="com.example.songwei.aidl.messenger" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
         </service>
 
     </application>

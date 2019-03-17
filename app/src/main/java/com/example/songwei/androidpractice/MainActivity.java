@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.songwei.androidpractice.AIDL.AIDLBookActivity;
 import com.example.songwei.androidpractice.AIDL.AIDLRestaurantActivity;
+import com.example.songwei.androidpractice.AIDL.Messenger.MessengerActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button1).setOnClickListener(this);
         findViewById(R.id.button2).setOnClickListener(this);
         findViewById(R.id.button3).setOnClickListener(this);
+        findViewById(R.id.button4).setOnClickListener(this);
     }
 
     //TODO: 添加测试页面时，在此补充 fixme
@@ -40,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button3:
                 AIDLRestaurantActivity.showAIDLRestaurantActivity(context);
+                break;
+            case R.id.button4:
+                MessengerActivity.startActivity(context);
                 break;
             default:
                 Toast.makeText(MainActivity.this, "无效跳转", Toast.LENGTH_SHORT).show();
