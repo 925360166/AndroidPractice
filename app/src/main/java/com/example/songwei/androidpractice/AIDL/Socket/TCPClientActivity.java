@@ -35,6 +35,8 @@ public class TCPClientActivity extends AppCompatActivity implements View.OnClick
 
     private static final int MESSAGE_RECEIVE_NEW_MSG = 1;
     private static final int MESSAGE_SOCKET_CONNECTED = 2;
+    private static final int MESSAGE_SEND_MSG = 3;
+    private static final int MESSAGE_REFRESH_VIEW = 4;
 
     private Button mSendButton;
     private TextView mMessageTextView;
@@ -55,6 +57,27 @@ public class TCPClientActivity extends AppCompatActivity implements View.OnClick
                     Toast.makeText(TCPClientActivity.this, "socket连接已建立", Toast.LENGTH_SHORT).show();
                     mSendButton.setEnabled(true);
                     break;
+                case MESSAGE_SEND_MSG:
+                    final String msgSend = mMessageEditText.getText().toString();
+                    new Thread() {
+                        @Override
+                        public void run() {
+                            if (!TextUtils.isEmpty(msgSend) && mPrintWriter != null) {
+                                mPrintWriter.println(msgSend);
+                                String time = formatDateTime(System.currentTimeMillis());
+                                final String showedMsg = "self " + time + ": " + msgSend + "\n";
+
+                                Message message = mHandler.obtainMessage(MESSAGE_REFRESH_VIEW);
+                                message.obj = showedMsg;
+                                message.sendToTarget();
+                            }
+                        }
+                    }.start();
+                    break;
+                case MESSAGE_REFRESH_VIEW:
+                    String showedMsg = (String) msg.obj;
+                    mMessageEditText.setText("");
+                    mMessageTextView.setText(mMessageTextView.getText() + showedMsg);
                 default:
                     break;
             }
@@ -94,14 +117,7 @@ public class TCPClientActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View v) {
         if (v == mSendButton) {
-            final String msg = mMessageEditText.getText().toString();
-            if (!TextUtils.isEmpty(msg) && mPrintWriter != null) {
-                mPrintWriter.println(msg);
-                mMessageEditText.setText("");
-                String time = formatDateTime(System.currentTimeMillis());
-                final String showedMsg = "self " + time + ": " + msg + "\n";
-                mMessageTextView.setText(mMessageTextView.getText() + showedMsg);
-            }
+            mHandler.obtainMessage(MESSAGE_SEND_MSG).sendToTarget();
         }
     }
 
