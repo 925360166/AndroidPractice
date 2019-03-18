@@ -40,25 +40,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //TODO: 添加测试页面时，在此补充 fixme
     @Override
     public void onClick(View view) {
-        Context context = MainActivity.this;
         switch (view.getId()) {
             case R.id.button1:
-                RecyclerViewActivity.showRecyclerView(context);
+                startActivity(RecyclerViewActivity.class);
                 break;
             case R.id.button2:
-                AIDLBookActivity.showAIDLBookActivity(context);
+                startActivity(AIDLBookActivity.class);
                 break;
             case R.id.button3:
-                AIDLRestaurantActivity.showAIDLRestaurantActivity(context);
+                startActivity(AIDLRestaurantActivity.class);
                 break;
             case R.id.button4:
-                MessengerActivity.startActivity(context);
+                startActivity(MessengerActivity.class);
                 break;
             case R.id.button5:
-                ProviderActivity.startActivity(context);
+                startActivity(ProviderActivity.class);
                 break;
             case R.id.button6:
-                TCPClientActivity.startActivity(context);
+                startActivity(TCPClientActivity.class);
                 break;
             case R.id.button7:
 
@@ -76,6 +75,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this, "无效跳转", Toast.LENGTH_SHORT).show();
                 break;
         }
+    }
+
+
+    public void startActivity(Class clazz){
+        Intent intent = new Intent(MainActivity.this, clazz);
+        MainActivity.this.startActivity(intent);
     }
 
 }

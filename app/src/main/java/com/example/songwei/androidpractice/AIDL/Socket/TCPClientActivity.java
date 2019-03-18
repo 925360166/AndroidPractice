@@ -1,6 +1,5 @@
 package com.example.songwei.androidpractice.AIDL.Socket;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,14 +8,12 @@ import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.songwei.androidpractice.AIDL.ContentProvider.ProviderActivity;
 import com.example.songwei.androidpractice.R;
 
 import java.io.BufferedReader;
@@ -167,9 +164,5 @@ public class TCPClientActivity extends AppCompatActivity implements View.OnClick
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    public static void startActivity(Context context) {
-        context.startActivity(new Intent(context, TCPClientActivity.class));
     }
 }
