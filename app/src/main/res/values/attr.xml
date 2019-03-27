@@ -3,4 +3,8 @@
     <declare-styleable name="SimpleImageView">
         <attr name="src"  format="integer"/>
     </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="circle_color" format="color" />
+    </declare-styleable>
 </resources>

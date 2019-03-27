@@ -26,6 +26,7 @@
         <activity android:name=".AIDL.Messenger.MessengerActivity" />
         <activity android:name=".AIDL.ContentProvider.ProviderActivity" />
         <activity android:name=".AIDL.Socket.TCPClientActivity" />
+        <activity android:name=".ImageLoader.ImageLoaderActivity" />
 
         <service
             android:name=".AIDL.BookService"
