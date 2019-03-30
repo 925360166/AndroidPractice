@@ -12,6 +12,7 @@ import com.example.songwei.androidpractice.AIDL.AIDLRestaurantActivity;
 import com.example.songwei.androidpractice.AIDL.ContentProvider.ProviderActivity;
 import com.example.songwei.androidpractice.AIDL.Messenger.MessengerActivity;
 import com.example.songwei.androidpractice.AIDL.Socket.TCPClientActivity;
+import com.example.songwei.androidpractice.CrashHandler.CrashActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(ImageLoaderActivity.class);
                 break;
             case R.id.button8:
-
+                startActivity(CrashActivity.class);
                 break;
             case R.id.button9:
 
