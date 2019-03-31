@@ -32,6 +32,7 @@
         <activity android:name=".AIDL.Socket.TCPClientActivity" />
         <activity android:name=".ImageLoader.ImageLoaderActivity" />
         <activity android:name=".CrashHandler.CrashActivity" />
+        <activity android:name=".ui_optimise.UiOptimiseActivity" />
 
         <!--所有的service-->
         <service
