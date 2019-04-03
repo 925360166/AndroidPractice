@@ -50,6 +50,16 @@ public class MyUtils {
                 context.getResources().getDisplayMetrics());
     }
 
+    public static int Dp2Px(Context context, float dp) {
+        final float scale = context.getResources().getDisplayMetrics().density; //当前屏幕密度因子
+        return (int) (dp * scale + 0.5f);
+    }
+
+    public static int Px2Dp(Context context, float px) {
+        final float scale = context.getResources().getDisplayMetrics().density; //当前屏幕密度因子
+        return (int) (px / scale + 0.5f);
+    }
+
     public static boolean isWifi(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
