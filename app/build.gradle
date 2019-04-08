@@ -35,4 +35,6 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:25.0.0'
     implementation 'com.github.bumptech.glide:glide:4.3.1'
     implementation project(':volley')
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.okio:okio:1.7.0'
 }
