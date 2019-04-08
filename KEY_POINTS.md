@@ -33,3 +33,12 @@
 7、Binder:
     http://weishu.me/2016/01/12/binder-index-for-newer/
     
+8、TCP三次握手与四次挥手
+    https://blog.csdn.net/qzcsu/article/details/72861891
+    https://blog.csdn.net/wuanwujie/article/details/71439551?utm_source=itdadao&utm_medium=referral
+    
+9、Volley导入与配置
+    https://www.jianshu.com/p/a4be59b1bf11
+    https://baijiahao.baidu.com/s?id=1606573801465636505&wfr=spider&for=pc
+    https://blog.csdn.net/Liuqz2009/article/details/78544559
+    
