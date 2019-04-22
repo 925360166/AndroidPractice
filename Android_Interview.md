@@ -14,6 +14,8 @@ GitHub:https://github.com/android-exchange/Android-Interview/blob/master/java/ja
     https://juejin.im/post/598ea9116fb9a03c335a99a4
     
 24. 对注解的了解？
+    https://blog.csdn.net/wzgiceman/article/details/53483665
+    https://www.jianshu.com/p/d4978bbce12a
     https://juejin.im/post/5b45bd715188251b3a1db54f
 
     25. 对依赖注入的了解？
