@@ -53,3 +53,6 @@
 12、Android Fragment看这篇就够了
     https://juejin.im/post/5cadbe046fb9a068ad1b0578?utm_source=gold_browser_extension
     
+13、关于使用AlarmManager的注意事项
+    https://www.jianshu.com/p/d69a90bc44c0
+    
