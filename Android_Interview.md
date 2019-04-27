@@ -18,7 +18,10 @@ GitHub:https://github.com/android-exchange/Android-Interview/blob/master/java/ja
     https://www.jianshu.com/p/d4978bbce12a
     https://juejin.im/post/5b45bd715188251b3a1db54f
 
-    25. 对依赖注入的了解？
+25. 对依赖注入的了解？
+    https://www.cnblogs.com/alltime/p/6729295.html
+    
+    
     26. 对泛型的了解？
     
     28. 对 Java 的异常体系的了解？
