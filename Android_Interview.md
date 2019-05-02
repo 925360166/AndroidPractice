@@ -25,7 +25,12 @@ GitHub:https://github.com/android-exchange/Android-Interview/blob/master/java/ja
 26. 对泛型的了解？
     https://www.cnblogs.com/fantasy01/p/3963593.html
     
-    28. 对 Java 的异常体系的了解？
-    29. 对解析与分派的了解？
+28. 对 Java 的异常体系的了解？
+    
+29. 对解析与分派的了解？
+    https://www.cnblogs.com/hapjin/p/9374269.html
+    
     30. 静态代理和动态代理的区别？有什么场景使用？
+    
     31. 谈谈对 Java 状态机理解？
+    
