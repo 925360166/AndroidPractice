@@ -4,7 +4,7 @@ GitHub:https://github.com/android-exchange/Android-Interview/blob/master/java/ja
 
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+##############################################################
 19. HashMap，HashTable，ConcurrentHashMap 实现原理以及区别？
     https://www.cnblogs.com/heyonggang/p/9112731.html
     http://www.importnew.com/28263.html
@@ -28,9 +28,13 @@ GitHub:https://github.com/android-exchange/Android-Interview/blob/master/java/ja
 28. 对 Java 的异常体系的了解？
     
 29. 对解析与分派的了解？
+    https://blog.csdn.net/itcats_cn/article/details/81144036
     https://www.cnblogs.com/hapjin/p/9374269.html
     
-    30. 静态代理和动态代理的区别？有什么场景使用？
+30. 静态代理和动态代理的区别？有什么场景使用？
+    https://juejin.im/post/5cbd3644f265da035b6196ce
+    https://blog.csdn.net/wangqyoho/article/details/77584832#
+    区别：https://blog.csdn.net/fangqun663775/article/details/78960545
     
     31. 谈谈对 Java 状态机理解？
     
