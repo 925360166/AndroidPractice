@@ -36,5 +36,8 @@ GitHub:https://github.com/android-exchange/Android-Interview/blob/master/java/ja
     https://blog.csdn.net/wangqyoho/article/details/77584832#
     区别：https://blog.csdn.net/fangqun663775/article/details/78960545
     
-    31. 谈谈对 Java 状态机理解？
+31. 谈谈对 Java 状态机理解？
+
+# volatile关键字解析：
+   https://www.cnblogs.com/dolphin0520/p/3920373.html
     
