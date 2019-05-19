@@ -6,15 +6,19 @@ import android.os.HandlerThread;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.songwei.androidpractice.R;
 
 public class HandlerThreadActivity extends AppCompatActivity {
 
-    Handler mainHandler, workHandler;
+    private static final String TAG = "HandlerThreadActivity";
+
+    static Handler mainHandler, workHandler;
     HandlerThread mHandlerThread;
     TextView text;
     Button button1, button2, button3;
@@ -61,6 +65,10 @@ public class HandlerThreadActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         //通过主线程Handler.post方法进行在主线程的UI更新操作
+                        if(HandlerThreadActivity.this.isFinishing() || HandlerThreadActivity.this.isDestroyed()){
+                            Log.e(TAG, "Activity已销毁，不再更新UI");
+                            return;
+                        }
                         mainHandler.post(new Runnable() {
                             @Override
                             public void run() {
@@ -74,6 +82,10 @@ public class HandlerThreadActivity extends AppCompatActivity {
                             Thread.sleep(3000);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
+                        }
+                        if(HandlerThreadActivity.this.isFinishing() || HandlerThreadActivity.this.isDestroyed()){
+                            Log.e(TAG, "Activity已销毁，不再更新UI");
+                            return;
                         }
                         mainHandler.post(new Runnable() {
                             @Override
@@ -103,7 +115,11 @@ public class HandlerThreadActivity extends AppCompatActivity {
                 Message msg = Message.obtain();
                 msg.what = 1; //消息的标识
                 msg.obj = "A"; // 消息的存放
-                workHandler.sendMessage(msg);
+                if (mHandlerThread.isAlive()) {
+                    workHandler.sendMessage(msg);
+                } else {
+                    Toast.makeText(HandlerThreadActivity.this, "HandlerThread 已经死了，不再发送Message", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -119,7 +135,11 @@ public class HandlerThreadActivity extends AppCompatActivity {
                 msg.what = 2; //消息的标识
                 msg.obj = "B"; // 消息的存放
                 // b. 通过Handler发送消息到其绑定的消息队列
-                workHandler.sendMessage(msg);
+                if (mHandlerThread.isAlive()) {
+                    workHandler.sendMessage(msg);
+                } else {
+                    Toast.makeText(HandlerThreadActivity.this, "HandlerThread 已经死了，不再发送Message", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -129,7 +149,12 @@ public class HandlerThreadActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mHandlerThread.quit();
+                if (mHandlerThread.isAlive()) {
+                    workHandler.removeCallbacksAndMessages(null);
+                    mHandlerThread.quit();
+                } else {
+                    Toast.makeText(HandlerThreadActivity.this, "HandlerThread 已经死了，不在执行quit", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
