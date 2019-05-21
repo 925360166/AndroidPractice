@@ -1,7 +1,6 @@
 package com.example.songwei.androidpractice;
 
 import android.content.Intent;
-import android.os.HandlerThread;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +14,7 @@ import com.example.songwei.androidpractice.AIDL.Socket.TCPClientActivity;
 import com.example.songwei.androidpractice.CrashHandler.CrashActivity;
 import com.example.songwei.androidpractice.HandlerThread.HandlerThreadActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
+import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
 import com.example.songwei.androidpractice.ui_optimise.UiOptimiseActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -39,6 +39,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button8).setOnClickListener(this);
         findViewById(R.id.button9).setOnClickListener(this);
         findViewById(R.id.button10).setOnClickListener(this);
+        findViewById(R.id.button11).setOnClickListener(this);
+        findViewById(R.id.button12).setOnClickListener(this);
+        findViewById(R.id.button13).setOnClickListener(this);
+        findViewById(R.id.button14).setOnClickListener(this);
+        findViewById(R.id.button15).setOnClickListener(this);
     }
 
     //TODO: 添加测试页面时，在此补充 fixme
@@ -75,6 +80,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button10:
                 startActivity(HandlerThreadActivity.class);
                 break;
+            case R.id.button11:
+                startActivity(IntentServiceActivity.class);
+                break;
+            case R.id.button12:
+//                startActivity( );
+                break;
+            case R.id.button13:
+//                startActivity( );
+                break;
+            case R.id.button14:
+//                startActivity( );
+                break;
+            case R.id.button15:
+//                startActivity( );
+                break;
             default:
                 Toast.makeText(MainActivity.this, "无效跳转", Toast.LENGTH_SHORT).show();
                 break;
@@ -82,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    public void startActivity(Class clazz){
+    public void startActivity(Class clazz) {
         Intent intent = new Intent(MainActivity.this, clazz);
         MainActivity.this.startActivity(intent);
     }

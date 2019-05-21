@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.songwei.androidpractice">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".AndroidPracticeApp"
@@ -34,6 +34,7 @@
         <activity android:name=".CrashHandler.CrashActivity" />
         <activity android:name=".ui_optimise.UiOptimiseActivity" />
         <activity android:name=".HandlerThread.HandlerThreadActivity" />
+        <activity android:name=".IntentService.IntentServiceActivity" />
 
         <!--所有的service-->
         <service
@@ -69,7 +70,12 @@
         <service
             android:name=".AIDL.Socket.TCPServerService"
             android:exported="true"
-            android:process=":socket">
+            android:process=":socket"></service>
+
+        <service android:name=".IntentService.MyIntentService">
+            <intent-filter>
+                <action android:name="com.songwei.practice.intent_service" />
+            </intent-filter>
         </service>
 
         <!--所有的provider-->
