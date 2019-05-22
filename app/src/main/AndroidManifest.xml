@@ -35,6 +35,7 @@
         <activity android:name=".ui_optimise.UiOptimiseActivity" />
         <activity android:name=".HandlerThread.HandlerThreadActivity" />
         <activity android:name=".IntentService.IntentServiceActivity" />
+        <activity android:name=".CustomViews.CustomViewsActivity" />
 
         <!--所有的service-->
         <service
