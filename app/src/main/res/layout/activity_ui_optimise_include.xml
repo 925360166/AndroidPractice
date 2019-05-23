@@ -17,4 +17,32 @@
         android:layout_gravity="bottom"
         />
 
+    <Button
+        android:id="@+id/bt_inflate_view_stub"
+        android:text="Inflate ViewStub"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_hide_view_stub"
+        android:text="不可见ViewStub: View.INVISIBLE"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_gone_view_stub"
+        android:text="去掉ViewStub: View.GONE"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_show_view_stub"
+        android:text="显示ViewStub: View.VISIBLE"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
