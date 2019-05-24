@@ -1,21 +1,27 @@
 apply plugin: 'com.android.application'
+apply from: '../buildconfig/config.gradle'
 
 android {
-    compileSdkVersion 25
+    def buildConfig = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion buildConfig["compileSdkVersion"]
+
     defaultConfig {
-        applicationId "com.example.songwei.androidpractice"
-        minSdkVersion 21
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        applicationId buildConfig["applicationId"]
+        minSdkVersion buildConfig["minSdkVersion"]
+        targetSdkVersion buildConfig["targetSdkVersion"]
+        versionCode buildConfig["versionCode"]
+        versionName buildConfig["versionName"]
+        testInstrumentationRunner buildConfig["testInstrumentationRunner"]
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
@@ -41,6 +47,8 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:25.0.0'
     implementation 'com.github.bumptech.glide:glide:4.3.1'
     implementation project(':volley')
+    implementation project(':env')
+    implementation project(':utils')
     implementation 'com.squareup.okhttp3:okhttp:3.14.1'
     implementation 'com.squareup.okio:okio:1.13.0'
 //    implementation 'com.squareup.picasso:picasso:2.5.2'

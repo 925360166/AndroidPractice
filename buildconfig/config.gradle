@@ -1,0 +1,23 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+//各个module的统一配置
+ext {
+    compileSdkVersion = 25
+    applicationId = "com.example.songwei.androidpractice"
+    minSdkVersion = 21
+    targetSdkVersion = 25
+    versionCode = 1
+    versionName = "1.0"
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+
+//    dependencies = [
+//            //android.support
+//            "appcompat-v7"   : "com.android.support:appcompat-v7: ${android_support_version}",
+//            "design"         : "com.android.support:design: ${android_support_version}",
+//            "recyclerview-v7": "com.android.support:recyclerview-v7: ${android_support_version}",
+//    ]
+}
