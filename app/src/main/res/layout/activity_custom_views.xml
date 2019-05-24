@@ -8,12 +8,18 @@
     <!--注意添加自定义view组件的标签名：包名 + 自定义View类名-->
     <!--控件背景设置为黑色-->
     <com.example.songwei.androidpractice.CustomViews.CircleView
+        android:id="@+id/cv_circle_view"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:background="#000000"
         android:padding="20dp"
-
+        android:visibility="gone"
         app:circle_color="#ff4081"
     />
+
+    <com.example.songwei.androidpractice.CustomViews.CircleWaveView
+        android:id="@+id/cv_circle_wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </android.support.constraint.ConstraintLayout>

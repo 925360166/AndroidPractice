@@ -12,6 +12,11 @@ import android.view.View;
 import com.example.songwei.androidpractice.R;
 
 /**
+ *
+ * 手把手教你写一个完整的自定义View
+ * https://www.jianshu.com/p/e9d8420b1b9c
+ *
+ *
  * 用于绘制自定义View的具体内容
  * 具体绘制是在复写onDraw()内实现
  */
