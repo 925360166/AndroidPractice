@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/common_dialog_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="70dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="70dp"
+    android:minWidth="308dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/common_ll_content_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_dialog_shape"
+        android:orientation="vertical">
+
+        <com.example.songwei.androidpractice.CustomViews.SimpleTitleBar
+            android:id="@+id/common_ll_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- use scroll to adapt too many content-->
+        <ScrollView
+            android:id="@+id/scroll_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/common_margin_h40"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/common_ll_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical" />
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/common_ll_bottom_single"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin_h40"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.songwei.androidpractice.CustomViews.RoundCornerBtn
+                android:id="@+id/common_bottom_btn"
+                style="@style/RoundCornerBgLightBlue"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:contentDescription="i_know"
+                android:gravity="center"
+                android:text="我知道了"
+                android:textColor="@color/common_color_c1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/common_ll_bottom_double"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.example.songwei.androidpractice.CustomViews.RoundCornerBtn
+                android:id="@+id/common_bottom_btn_left"
+                style="@style/RoundCornerBgLightBlue"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxWidth="120dp"
+                android:text="取消"
+                android:textColor="@color/common_color_c1" />
+
+            <com.example.songwei.androidpractice.CustomViews.RoundCornerBtn
+                android:id="@+id/common_bottom_btn_right"
+                style="@style/RoundCornerBgLightBlue"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxWidth="120dp"
+                android:text="卸载"
+                android:textColor="@color/common_color_c1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

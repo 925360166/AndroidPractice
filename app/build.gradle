@@ -26,7 +26,7 @@ android {
         main {
             jniLibs.srcDirs = ['libs']
             jni.srcDirs = ['jni']
-            res.srcDirs = ['src/main/res', 'src/main/res/OkHttp']
+            res.srcDirs = ['src/main/res', 'src/main/res/OkHttp', 'src/main/CustomViews']
         }
     }
     compileOptions {

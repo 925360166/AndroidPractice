@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- avoid ui shadow-->
+    <item android:top="10dp">
+        <shape>
+            <solid android:color="@color/common_dialog_bg_color" />
+            <corners
+                android:bottomLeftRadius="4dp"
+                android:bottomRightRadius="4dp"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp" />
+
+        </shape>
+    </item>
+</layer-list>

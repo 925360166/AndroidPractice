@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- font size-->
+    <dimen name="common_font_size_f42">21sp</dimen>
+    <dimen name="common_font_size_f36">18sp</dimen>
+    <dimen name="common_font_size_f32">16sp</dimen>
+    <dimen name="common_font_size_f28">14sp</dimen>
+    <dimen name="common_font_size_f24">12sp</dimen>
+    <dimen name="common_font_size_f20">10sp</dimen>
+
+    <dimen name="common_margin_w10">5dp</dimen>
+    <dimen name="common_margin_w0">0dp</dimen>
+    <dimen name="common_margin_w20">10dp</dimen>
+    <dimen name="common_margin_w30">15dp</dimen>
+    <dimen name="common_margin_w60">30dp</dimen>
+    <dimen name="common_margin_h1">1px</dimen>
+    <dimen name="common_margin_h4">2dp</dimen>
+    <dimen name="common_margin_h6">3dp</dimen>
+    <dimen name="common_margin_h10">5dp</dimen>
+    <dimen name="common_margin_h12">6dp</dimen>
+    <dimen name="common_margin_h16">8dp</dimen>
+    <dimen name="common_margin_h20">10dp</dimen>
+    <dimen name="common_margin_h30">15dp</dimen>
+    <dimen name="common_margin_h40">20dp</dimen>
+    <dimen name="common_margin_h50">25dp</dimen>
+    <dimen name="common_margin_h80">40dp</dimen>
+    <dimen name="common_margin_h60">30dp</dimen>
+    <dimen name="common_margin_h90">45dp</dimen>
+
+    <dimen name="common_view_pager_tab_height">48dp</dimen>
+    <dimen name="common_btn_stroke_width">1dp</dimen>
+    <dimen name="common_list_row_height">66dp</dimen>
+    <dimen name="common_list_row_setting_height">56dp</dimen>
+    <dimen name="common_divider_height">@dimen/common_margin_h1</dimen>
+    <dimen name="common_page_content_margin">@dimen/common_margin_h10</dimen>
+    <!-- dialog -->
+    <dimen name="common_dialog_title_bar_height">56dp</dimen>
+    <dimen name="hang_up_container_height">100dp</dimen>
+</resources>

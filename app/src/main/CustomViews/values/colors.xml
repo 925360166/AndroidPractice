@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- font_color-->
+    <color name="common_color_c1">#5f88f4</color>
+    <color name="common_color_c2">#8a67ec</color>
+    <color name="common_color_c3">#333a4d</color>
+    <color name="common_color_c4">#3b445a</color>
+    <color name="common_color_c5">#d9e1f5</color>
+    <color name="common_color_c6">#d9e1f5</color>
+    <color name="common_color_c7">#f5f9fc</color>
+    <color name="common_color_c8">#ffffff</color>
+    <color name="common_color_c9">#f1f4fb</color>
+    <color name="common_color_c10">#4d4d4d</color>
+    <color name="common_color_c11">#999999</color>
+    <color name="common_color_c12">#afc0f6</color>
+    <color name="common_color_c13">#90c3f2</color>
+    <color name="common_color_c14">#26000000</color>
+    <color name="common_color_c16">#9c99ff</color>
+    <color name="common_color_c17">#ea4b08</color>
+    <color name="common_color_c18">#BB251F</color>
+    <color name="common_color_c19">#FFD578</color>
+    <color name="common_color_c20">#4379FD</color>
+    <color name="common_color_c21">#373737</color>
+    <color name="common_color_c22">#cccde5ff</color>
+    <color name="common_color_c23">#fffd57</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 主要详情页等-->
+    <color name="common_bg_color1">@color/common_color_c8</color>
+    <color name="common_dialog_bg_color">@color/common_color_c8</color>
+    <color name="common_divider_color">@color/common_color_c6</color>
+    <color name="common_list_row_normal_color">@color/common_color_c8</color>
+    <color name="common_list_row_pressed_color">@color/common_color_c9</color>
+    <color name="common_btn_bg_press_color1">#e6f4ff</color>
+    <color name="common_btn_bg_press_color2">#5b80e6</color>
+    <color name="common_btn_bg_press_color3">#ebedf4</color>
+    <color name="common_btn_bg_press_color4">#1ef5f9fc</color>
+
+</resources>

@@ -1,10 +1,12 @@
 package com.example.songwei.androidpractice.CustomViews;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.songwei.androidpractice.AppEnv;
 import com.example.songwei.androidpractice.R;
 
 public class CustomViewsActivity extends AppCompatActivity {
@@ -21,6 +23,12 @@ public class CustomViewsActivity extends AppCompatActivity {
     private void initView() {
         findViewById(R.id.cv_circle_view).setVisibility(View.GONE);
         findViewById(R.id.cv_circle_wave_view).setVisibility(View.GONE);
-        findViewById(R.id.cv_step_arc_view).setVisibility(View.VISIBLE);
+        findViewById(R.id.cv_step_arc_view).setVisibility(View.GONE);
+        findViewById(R.id.bt_1).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                CommonNotifyActivity.startActvity(AppEnv.getContext(), "", "", new String[]{}, "");
+            }
+        });
     }
 }

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="roundCornorBg">
+        <attr name="default_color" format="color" />
+        <attr name="pressed_color" format="color" />
+        <attr name="disabled_color" format="color" />
+        <attr name="stroke_color" format="color" />
+        <attr name="stroke_width" format="dimension" />
+    </declare-styleable>
+
+    <style name="RoundCornerBgLightBlue">
+        <item name="default_color">@color/common_color_c8</item>
+        <item name="pressed_color">@color/common_btn_bg_press_color1</item>
+        <item name="stroke_color">@color/common_color_c1</item>
+        <item name="stroke_width">@dimen/common_btn_stroke_width</item>
+    </style>
+
+    <declare-styleable name="CustomUI">
+        <!--是否在我的设备中显示“服务器地址” 0:可见 1:占位不可见 2:不可见-->
+        <attr name="show_device_info_server_address" format="integer" />
+        <!--是否在我的设备中显示“客户标识码” 0:可见 1:占位不可见 2:不可见-->
+        <attr name="show_device_info_user_code" format="integer" />
+        <!--是否在设备信息中显示“技术支持” 0:可见 1:占位不可见 2:不可见-->
+        <attr name="show_device_info_tech_support" format="integer" />
+        <!--设备信息权限自动引导项  0:可见 1:占位不可见 2:不可见-->
+        <attr name="show_guide_permission_item" format="integer" />
+        <!--是否在关于我们中图标可点击，进入调试模式-->
+        <attr name="about_us_logo_clickable" format="boolean" />
+        <!--是否在设置密码中显示“为保证企业数据安全，请设置手势密码” 0:可见 1:占位不可见 2:不可见-->
+        <attr name="password_setting_show_login_tint" format="integer" />
+        <!--二维码-->
+        <attr name="qr_code" format="boolean" />
+        <!--活动二维码-->
+        <attr name="activity_policy_qr_code" format="boolean" />
+
+        <!--是否在应用详情中显示“VPN”-->
+        <attr name="show_vpn_setting" format="boolean" />
+
+        <!--推送消息是否全屏-->
+        <attr name="push_msg_full_screen" format="boolean" />
+        <!--推送消息是否亮屏-->
+        <attr name="push_msg_screen_bright" format="boolean" />
+        <!--推送消息是否显示在锁屏壁纸上-->
+        <attr name="push_msg_top_show" format="boolean" />
+
+        <!--CommonTitleBar的颜色-->
+        <attr name="common_title_bar_color" format="color" />
+        <!--强制横竖屏 1:竖屏 2:横屏 其它:pad横屏|phone竖屏-->
+        <attr name="screen_orientation" format="integer" />
+    </declare-styleable>
+
+</resources>
