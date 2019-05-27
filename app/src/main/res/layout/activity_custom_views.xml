@@ -19,6 +19,12 @@
 
     <com.example.songwei.androidpractice.CustomViews.CircleWaveView
         android:id="@+id/cv_circle_wave_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.songwei.androidpractice.CustomViews.StepArcView
+        android:id="@+id/cv_step_arc_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

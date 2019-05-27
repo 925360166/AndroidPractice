@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PointF;
@@ -65,7 +66,7 @@ public class StepArcView extends View {
         /**
          * 通过这个拿到一个资源图片对象
          */
-        bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.arrow);
+        bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.shock_point_small);
 
     }
 
@@ -119,7 +120,7 @@ public class StepArcView extends View {
     private void drawArcYellow(Canvas canvas, RectF rectF) {
         Paint paint = new Paint();
         /** 默认画笔颜色，黄色 */
-        paint.setColor(getResources().getColor(R.color.default_color));
+        paint.setColor(Color.YELLOW);
         /** 结合处为圆弧*/
         paint.setStrokeJoin(Paint.Join.ROUND);
         /** 设置画笔的样式 Paint.Cap.Round ,Cap.SQUARE等分别为圆形、方形*/
@@ -160,7 +161,7 @@ public class StepArcView extends View {
          * 【第三个参数】：渐变的颜色数组
          * 【第四个参数】：渐变的颜色数组对应的相对位置
          */
-        paintCurrent.setShader(new SweepGradient(centerX, centerX, new int[]{getResources().getColor(R.color.start_color), getResources().getColor(R.color.end_color)}, null));
+        paintCurrent.setShader(new SweepGradient(centerX, centerX, new int[]{Color.GREEN, Color.BLUE}, null));
         canvas.drawArc(rectF, startAngle, currentAngleLength, false, paintCurrent);
     }
 
@@ -174,7 +175,7 @@ public class StepArcView extends View {
         vTextPaint.setTextSize(numberTextSize);
         Typeface font = Typeface.create(Typeface.SANS_SERIF, Typeface.NORMAL);
         vTextPaint.setTypeface(font);//字体风格
-        vTextPaint.setColor(getResources().getColor(R.color.center_text_color));
+        vTextPaint.setColor(Color.BLACK);
         Rect bounds_Number = new Rect();
         vTextPaint.getTextBounds(stepNumber, 0, stepNumber.length(), bounds_Number);
         canvas.drawText(stepNumber, centerX, getHeight() / 2 + bounds_Number.height() / 2, vTextPaint);
@@ -189,7 +190,7 @@ public class StepArcView extends View {
         vTextPaint.setTextSize(dipToPx(13));
         vTextPaint.setTextAlign(Paint.Align.CENTER);
         vTextPaint.setAntiAlias(true);//抗锯齿功能
-        vTextPaint.setColor(getResources().getColor(R.color.other_text_color));
+        vTextPaint.setColor(Color.WHITE);
         String stepString = "目标 "+totalStepNum;
         Rect bounds = new Rect();
         vTextPaint.getTextBounds(stepString, 0, stepString.length(), bounds);
@@ -226,7 +227,7 @@ public class StepArcView extends View {
     private void drawLine(Canvas canvas) {
         Paint mPaint = new Paint();
         mPaint.setStrokeWidth(5);
-        mPaint.setColor(getResources().getColor(R.color.start_color));
+        mPaint.setColor(Color.GREEN);
         /**要绘制的表盘线的总数**/
         int count = 60;
         /**要绘制的表盘每个间隔线条之间的夹角**/

@@ -20,6 +20,7 @@ public class CustomViewsActivity extends AppCompatActivity {
 
     private void initView() {
         findViewById(R.id.cv_circle_view).setVisibility(View.GONE);
-        findViewById(R.id.cv_circle_wave_view).setVisibility(View.VISIBLE);
+        findViewById(R.id.cv_circle_wave_view).setVisibility(View.GONE);
+        findViewById(R.id.cv_step_arc_view).setVisibility(View.VISIBLE);
     }
 }
