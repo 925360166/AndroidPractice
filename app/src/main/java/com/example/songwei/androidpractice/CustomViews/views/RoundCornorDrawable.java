@@ -1,4 +1,4 @@
-package com.example.songwei.androidpractice.CustomViews;
+package com.example.songwei.androidpractice.CustomViews.views;
 
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;

@@ -1,4 +1,4 @@
-package com.example.songwei.androidpractice.CustomViews;
+package com.example.songwei.androidpractice.CustomViews.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;

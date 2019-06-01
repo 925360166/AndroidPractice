@@ -35,7 +35,7 @@
         <activity android:name=".HandlerThread.HandlerThreadActivity" />
         <activity android:name=".IntentService.IntentServiceActivity" />
         <activity android:name=".CustomViews.CustomViewsActivity" />
-        <activity android:name=".CustomViews.CommonNotifyActivity" />
+        <activity android:name=".CustomViews.views.CommonNotifyActivity" />
 
         <!--所有的service-->
         <service

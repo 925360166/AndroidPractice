@@ -7,7 +7,7 @@
 
     <!--注意添加自定义view组件的标签名：包名 + 自定义View类名-->
     <!--控件背景设置为黑色-->
-    <com.example.songwei.androidpractice.CustomViews.CircleView
+    <com.example.songwei.androidpractice.CustomViews.views.CircleView
         android:id="@+id/cv_circle_view"
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -16,19 +16,20 @@
         app:circle_color="#ff4081"
     />
 
-    <com.example.songwei.androidpractice.CustomViews.CircleWaveView
+    <com.example.songwei.androidpractice.CustomViews.views.CircleWaveView
         android:id="@+id/cv_circle_wave_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.example.songwei.androidpractice.CustomViews.StepArcView
+    <com.example.songwei.androidpractice.CustomViews.views.StepArcView
         android:id="@+id/cv_step_arc_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <Button
         android:id="@+id/bt_1"
-        android:text="Button1"
+        android:text="展示CommonDialogActivity"
+        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
