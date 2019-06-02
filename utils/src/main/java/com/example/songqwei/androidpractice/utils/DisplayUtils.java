@@ -1,11 +1,12 @@
 package com.example.songqwei.androidpractice.utils;
 
-import android.content.ContentProvider;
 import android.content.Context;
 import android.util.TypedValue;
 
 /**
  * dp、sp转换为px的工具
+ *
+ * 《Android群英传》第6章：Android绘图机制与处理技巧
  */
 public class DisplayUtils {
 
