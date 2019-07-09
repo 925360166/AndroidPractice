@@ -16,6 +16,7 @@ import com.example.songwei.androidpractice.CustomViews.CustomViewsActivity;
 import com.example.songwei.androidpractice.HandlerThread.HandlerThreadActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
 import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
+import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
 import com.example.songwei.androidpractice.ui_optimise.UiOptimiseActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {

@@ -23,7 +23,7 @@
         </activity>
 
         <!--所有的activity-->
-        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".RecyclerView.RecyclerViewActivity" />
         <activity android:name=".AIDL.AIDLBookActivity" />
         <activity android:name=".AIDL.AIDLRestaurantActivity" />
         <activity android:name=".AIDL.Messenger.MessengerActivity" />

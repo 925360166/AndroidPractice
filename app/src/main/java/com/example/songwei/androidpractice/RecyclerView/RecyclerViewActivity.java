@@ -1,4 +1,4 @@
-package com.example.songwei.androidpractice;
+package com.example.songwei.androidpractice.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.example.songwei.androidpractice.R;
 import com.example.songwei.androidpractice.adapters.RecyclerViewAdapter;
 
 import java.util.ArrayList;
