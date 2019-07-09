@@ -4,7 +4,7 @@
     android:id="@+id/ll_simple_title_bar_root"
     android:layout_width="match_parent"
     android:layout_height="@dimen/common_dialog_title_bar_height"
-    android:background="?attr/common_title_bar_color"
+    android:background="@color/common_title_bar_color"
     android:gravity="center"
     android:orientation="horizontal">
 

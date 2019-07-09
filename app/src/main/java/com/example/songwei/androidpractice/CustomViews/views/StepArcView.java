@@ -1,4 +1,4 @@
-package com.example.songwei.androidpractice.CustomViews;
+package com.example.songwei.androidpractice.CustomViews.views;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
