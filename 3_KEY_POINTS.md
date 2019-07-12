@@ -58,4 +58,6 @@
     
 ##### 14、Android设计模式系列文章：
    https://www.jianshu.com/p/bf92927c9d22
-    
+
+# 15、Handler为什么可能会造成内存泄漏以及可用的四种解决方法
+    https://www.cnblogs.com/chitanta/p/9675139.html    
