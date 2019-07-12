@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -30,8 +31,12 @@ public class RecyclerViewActivity extends AppCompatActivity {
         }
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new RecyclerViewAdapter(list);
+
+        //设置布局管理器
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //设置item增加和删除时的动画
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
     }
 
