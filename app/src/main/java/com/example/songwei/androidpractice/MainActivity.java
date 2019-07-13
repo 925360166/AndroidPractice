@@ -16,6 +16,7 @@ import com.example.songwei.androidpractice.CustomViews.CustomViewsActivity;
 import com.example.songwei.androidpractice.HandlerThread.HandlerThreadActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
 import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
+import com.example.songwei.androidpractice.RecyclerView.RecyclerView2Activity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
 import com.example.songwei.androidpractice.ui_optimise.UiOptimiseActivity;
 
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button13).setOnClickListener(this);
         findViewById(R.id.button14).setOnClickListener(this);
         findViewById(R.id.button15).setOnClickListener(this);
+        findViewById(R.id.button16).setOnClickListener(this);
     }
 
     //TODO: 添加测试页面时，在此补充 fixme
@@ -89,12 +91,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(CustomViewsActivity.class);
                 break;
             case R.id.button13:
-//                startActivity( );
+                startActivity(RecyclerView2Activity.class);
                 break;
             case R.id.button14:
 //                startActivity( );
                 break;
             case R.id.button15:
+//                startActivity( );
+                break;
+            case R.id.button16:
+//                startActivity( );
+                break;
+            case R.id.button17:
+//                startActivity( );
+                break;
+            case R.id.button18:
+//                startActivity( );
+                break;
+            case R.id.button19:
+//                startActivity( );
+                break;
+            case R.id.button20:
 //                startActivity( );
                 break;
             default:
