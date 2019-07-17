@@ -17,6 +17,5 @@ public class BgTransparentActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bgtransparent);
         Toast.makeText(this, "无contentView的Activity已显示", Toast.LENGTH_SHORT).show();
-        Log.d(TAG, "onCreate called, no set contentView");
     }
 }
