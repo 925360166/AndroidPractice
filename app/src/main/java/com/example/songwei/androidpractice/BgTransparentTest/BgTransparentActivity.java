@@ -3,7 +3,6 @@ package com.example.songwei.androidpractice.BgTransparentTest;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.example.songwei.androidpractice.R;
