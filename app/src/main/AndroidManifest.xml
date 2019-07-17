@@ -39,6 +39,9 @@
         <activity android:name=".CustomViews.views.Shape1Activity" />
         <activity android:name=".CustomViews.views.ButtonSelectorActivity" />
         <activity android:name=".RecyclerView.RecyclerView2Activity" />
+        <activity
+            android:name="com.example.songwei.androidpractice.BgTransparentTest.BgTransparentActivity"
+            android:theme="@style/common_dialog" />
 
         <!--所有的service-->
         <service

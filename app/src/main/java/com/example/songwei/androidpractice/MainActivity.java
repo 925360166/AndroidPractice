@@ -20,6 +20,8 @@ import com.example.songwei.androidpractice.RecyclerView.RecyclerView2Activity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
 import com.example.songwei.androidpractice.ui_optimise.UiOptimiseActivity;
 
+import com.example.songwei.androidpractice.BgTransparentTest.BgTransparentActivity;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(RecyclerView2Activity.class);
                 break;
             case R.id.button14:
-//                startActivity( );
+                startActivity(BgTransparentActivity.class);
                 break;
             case R.id.button15:
 //                startActivity( );
