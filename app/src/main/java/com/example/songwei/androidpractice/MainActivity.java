@@ -22,6 +22,7 @@ import com.example.songwei.androidpractice.CustomViews.CustomViewsActivity;
 import com.example.songwei.androidpractice.HandlerThread.HandlerThreadActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
 import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
+import com.example.songwei.androidpractice.MaterialDesign.TabLayoutActivity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerView2Activity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
 import com.example.songwei.androidpractice.ui_optimise.UiOptimiseActivity;
@@ -162,7 +163,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(BgTransparentActivity.class);
                 break;
             case R.id.button15:
-//                startActivity( );
+                startActivity(TabLayoutActivity.class);
                 break;
             case R.id.button16:
 //                startActivity( );

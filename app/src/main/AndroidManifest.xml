@@ -51,6 +51,7 @@
         <activity
             android:name="com.example.songwei.androidpractice.BgTransparentTest.BgTransparentActivity"
             android:theme="@style/common_dialog" />
+        <activity android:name=".MaterialDesign.TabLayoutActivity" />
 
         <!--所有的service-->
         <service
