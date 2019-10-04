@@ -1,2 +1,2 @@
-include ':app', ':env', ':utils'
+include ':app', ':env', ':utils', ':mvp'
 //include ':volley'

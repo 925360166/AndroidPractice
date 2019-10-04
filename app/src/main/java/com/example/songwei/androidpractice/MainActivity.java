@@ -25,6 +25,7 @@ import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
 import com.example.songwei.androidpractice.MaterialDesign.TabLayoutActivity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerView2Activity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
+import com.example.songwei.androidpractice.todayinformation.splash.SplashActivity;
 import com.example.songwei.androidpractice.ui_optimise.UiOptimiseActivity;
 
 import com.example.songwei.androidpractice.BgTransparentTest.BgTransparentActivity;
@@ -77,6 +78,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button14).setOnClickListener(this);
         findViewById(R.id.button15).setOnClickListener(this);
         findViewById(R.id.button16).setOnClickListener(this);
+        findViewById(R.id.button17).setOnClickListener(this);
+        findViewById(R.id.button18).setOnClickListener(this);
+        findViewById(R.id.button19).setOnClickListener(this);
+        findViewById(R.id.button20).setOnClickListener(this);
     }
 
     //动态申请权限
@@ -166,7 +171,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(TabLayoutActivity.class);
                 break;
             case R.id.button16:
-//                startActivity( );
+                startActivity(SplashActivity.class);
                 break;
             case R.id.button17:
 //                startActivity( );

@@ -52,9 +52,14 @@ dependencies {
 //    implementation project(':volley')
     implementation project(':env')
     implementation project(':utils')
+    implementation project(':mvp')
     implementation 'com.squareup.okhttp3:okhttp:3.14.1'
 //    implementation 'com.squareup.okio:okio:1.13.0'
     //    implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.google.code.gson:gson:2.8.0'
     implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+
+    // butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
