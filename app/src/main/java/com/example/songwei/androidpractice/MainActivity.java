@@ -20,11 +20,13 @@ import com.example.songwei.androidpractice.AIDL.Socket.TCPClientActivity;
 import com.example.songwei.androidpractice.CrashHandler.CrashActivity;
 import com.example.songwei.androidpractice.CustomViews.CustomViewsActivity;
 import com.example.songwei.androidpractice.HandlerThread.HandlerThreadActivity;
+import com.example.songwei.androidpractice.HttpTest.HttpTestActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
 import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
 import com.example.songwei.androidpractice.MaterialDesign.TabLayoutActivity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerView2Activity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
+import com.example.songwei.androidpractice.ScreenAdaptation.ScreenAdaptationActivity;
 import com.example.songwei.androidpractice.todayinformation.splash.SplashActivity;
 import com.example.songwei.androidpractice.ui_optimise.UiOptimiseActivity;
 
@@ -174,10 +176,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(SplashActivity.class);
                 break;
             case R.id.button17:
-//                startActivity( );
+                startActivity(HttpTestActivity.class);
                 break;
             case R.id.button18:
-//                startActivity( );
+                startActivity(ScreenAdaptationActivity.class);
                 break;
             case R.id.button19:
 //                startActivity( );

@@ -60,4 +60,11 @@
    https://www.jianshu.com/p/bf92927c9d22
 
 # 15、Handler为什么可能会造成内存泄漏以及可用的四种解决方法
-    https://www.cnblogs.com/chitanta/p/9675139.html    
+    https://www.cnblogs.com/chitanta/p/9675139.html  
+    
+# 16、ThreadLocal：
+    https://www.jianshu.com/p/3c5d7f09dfbd
+    https://www.jianshu.com/p/2a34d30806d4
+    
+# 17、Android Handler机制之总目录
+    https://www.jianshu.com/p/43bb31d8a742  

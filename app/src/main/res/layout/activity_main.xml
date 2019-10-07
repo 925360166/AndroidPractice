@@ -162,7 +162,7 @@
                 android:id="@+id/button16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button16"
+                android:text="TodayInformation: SplashActivity"
                 android:textAllCaps="false"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button15" />
@@ -171,7 +171,7 @@
                 android:id="@+id/button17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button17"
+                android:text="HttpTest"
                 android:textAllCaps="false"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button16" />
@@ -180,7 +180,7 @@
                 android:id="@+id/button18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button18"
+                android:text="屏幕适配-字节跳动方案"
                 android:textAllCaps="false"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button17" />
