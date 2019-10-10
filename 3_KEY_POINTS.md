@@ -67,4 +67,5 @@
     https://www.jianshu.com/p/2a34d30806d4
     
 # 17、Android Handler机制之总目录
-    https://www.jianshu.com/p/43bb31d8a742  
+    https://www.jianshu.com/p/43bb31d8a742
+    https://blog.csdn.net/s13383754499/article/details/79096971
