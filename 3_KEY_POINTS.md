@@ -57,7 +57,7 @@
     https://www.jianshu.com/p/d69a90bc44c0
     
 ##### 14、Android设计模式系列文章：
-   https://www.jianshu.com/p/bf92927c9d22
+    https://www.jianshu.com/p/bf92927c9d22
 
 # 15、Handler为什么可能会造成内存泄漏以及可用的四种解决方法
     https://www.cnblogs.com/chitanta/p/9675139.html  
@@ -68,4 +68,6 @@
     
 # 17、Android Handler机制之总目录
     https://www.jianshu.com/p/43bb31d8a742
-    https://blog.csdn.net/s13383754499/article/details/79096971
+    
+# 18、Android网络编程之——Socket编程
+    https://www.jianshu.com/p/fb4dfab4eec1
