@@ -51,6 +51,7 @@
         <activity android:name=".todayinformation.splash.SplashActivity" />
         <activity android:name=".HttpTest.HttpTestActivity" />
         <activity android:name=".ScreenAdaptation.ScreenAdaptationActivity" />
+        <activity android:name=".SocketTest.SocketTestActivity" />
         <activity
             android:name="com.example.songwei.androidpractice.BgTransparentTest.BgTransparentActivity"
             android:theme="@style/common_dialog" />

@@ -27,6 +27,7 @@ import com.example.songwei.androidpractice.MaterialDesign.TabLayoutActivity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerView2Activity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
 import com.example.songwei.androidpractice.ScreenAdaptation.ScreenAdaptationActivity;
+import com.example.songwei.androidpractice.SocketTest.SocketTestActivity;
 import com.example.songwei.androidpractice.todayinformation.splash.SplashActivity;
 import com.example.songwei.androidpractice.ui_optimise.UiOptimiseActivity;
 
@@ -182,7 +183,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(ScreenAdaptationActivity.class);
                 break;
             case R.id.button19:
-//                startActivity( );
+                startActivity(SocketTestActivity.class);
                 break;
             case R.id.button20:
 //                startActivity( );
