@@ -73,5 +73,5 @@
     https://www.jianshu.com/p/fb4dfab4eec1
     https://www.jianshu.com/p/089fb79e308b
     
-# 19、这是一份详细 & 清晰的计算机网络基础 学习指南
-    https://www.jianshu.com/p/45d27f3e1196
+# 19、Handler中有Loop死循环，为什么没有阻塞主线程，原理是什么？
+    https://www.jianshu.com/p/ea7beaeeee16
