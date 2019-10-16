@@ -72,3 +72,6 @@
 # 18、Android网络编程之——Socket编程
     https://www.jianshu.com/p/fb4dfab4eec1
     https://www.jianshu.com/p/089fb79e308b
+    
+# 19、这是一份详细 & 清晰的计算机网络基础 学习指南
+    https://www.jianshu.com/p/45d27f3e1196
