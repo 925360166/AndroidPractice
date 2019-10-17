@@ -20,6 +20,10 @@ import android.widget.Toast;
 
 import com.example.songwei.androidpractice.R;
 
+/**
+ * Android的socket通信的长连接，有心跳检测
+ * https://blog.csdn.net/zh724738989/article/details/42007099
+ */
 public class SocketFrontActivity extends AppCompatActivity {
 
     private static final String TAG = "SocketFrontActivity";
