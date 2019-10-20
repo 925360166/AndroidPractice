@@ -24,6 +24,7 @@ import com.example.songwei.androidpractice.HttpTest.HttpTestActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
 import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
 import com.example.songwei.androidpractice.MaterialDesign.TabLayoutActivity;
+import com.example.songwei.androidpractice.MyOkHttpTest.MyOkHttpActivity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerView2Activity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
 import com.example.songwei.androidpractice.ScreenAdaptation.ScreenAdaptationActivity;
@@ -186,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(SocketTestActivity.class);
                 break;
             case R.id.button20:
-//                startActivity( );
+                startActivity(MyOkHttpActivity.class);
                 break;
             default:
                 Toast.makeText(MainActivity.this, "无效跳转", Toast.LENGTH_SHORT).show();
