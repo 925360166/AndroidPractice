@@ -63,9 +63,9 @@ public class JsonHttpRequest implements IHttpRequest {
             //这里是不是就把我们的数据返回到了我们的框架里了？
 
         }catch (Exception e){
-//            e.printStackTrace();
-//            throw  new RuntimeException("请求失败");
+            e.printStackTrace();
             callBackListener.onFailure(e);
+            throw  new RuntimeException("请求失败");
         }finally {
             urlConnection.disconnect();
         }

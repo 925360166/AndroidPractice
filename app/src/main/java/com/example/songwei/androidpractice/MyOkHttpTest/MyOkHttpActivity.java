@@ -18,6 +18,7 @@ import com.example.songwei.androidpractice.R;
 public class MyOkHttpActivity extends AppCompatActivity {
 
     private String url = "http://v.juhe.cn/historyWeather/citys?province_id=2&key=bb52107206585ab074f5e59a8c73875b";
+    private String urlWrong = "http://xxxxx";
 
     private TextView tvMyOkHttp;
 
@@ -31,7 +32,8 @@ public class MyOkHttpActivity extends AppCompatActivity {
 
     private void sendRequest() {
 
-        NEHttp.sendJsonRequest(url, null, NeBean.class, new IJsonDataTransforListener<NeBean>() {
+//        NEHttp.sendJsonRequest(url, null, NeBean.class, new IJsonDataTransforListener<NeBean>() {
+        NEHttp.sendJsonRequest(urlWrong, null, NeBean.class, new IJsonDataTransforListener<NeBean>() {
             @Override
             public void onSuccess(NeBean m) {
                 Log.e("======>", m.toString());

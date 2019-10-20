@@ -1,6 +1,9 @@
 package com.example.my_okhttp;
 
+import android.util.Log;
+
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.DelayQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -23,15 +26,49 @@ public class ThreadPoolManager {
     private LinkedBlockingQueue<Runnable> mQueue = new LinkedBlockingQueue<>();
 
     //将请求放入队列
-    public void addTask(Runnable runnable) {
-        if (runnable != null) {
+    public void addTask(HttpTask httpTask) {
+        if (httpTask != null) {
             try {
-                mQueue.put(runnable);
+                mQueue.put(httpTask);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
     }
+
+    //失败队列（重复次数，延迟时间）
+    private DelayQueue<HttpTask> mDelayQueue = new DelayQueue<>();
+
+    //将失败的任务添加到delayQueue
+    public void addDelayTask(HttpTask t){
+        if(t != null){
+            t.setDelayTime(3000);
+            mDelayQueue.offer(t);
+        }
+    }
+
+    //延迟队列调度线程
+    public Runnable delayThread = new Runnable() {
+        @Override
+        public void run() {
+            HttpTask ht = null;
+            while(true){
+                try{
+                    ht = mDelayQueue.take();
+                    if(ht.getRetryCount() < 3){
+                        mThreadPoolExecutor.execute(ht);
+                        ht.setRetryCount(ht.getRetryCount() + 1);
+                        Log.e("===重试机制===", ht.getRetryCount() + "");
+                    }else{
+                        Log.e("===重试机制===", "总是失败，不处理了");
+                    }
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+    };
+
 
     //创建线程池
     private ThreadPoolExecutor mThreadPoolExecutor;
@@ -42,10 +79,16 @@ public class ThreadPoolManager {
                 new RejectedExecutionHandler() {
                     @Override
                     public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
-                        addTask(r);
+                        HttpTask task = (HttpTask)r;
+                        if(task.getRetryCount() <= 0){
+                            addTask(task);
+                        }else{
+                            addDelayTask(task);
+                        }
                     }
                 });
         mThreadPoolExecutor.execute(ddThread);
+        mThreadPoolExecutor.execute(delayThread);
     }
 
     //创建调度线程
