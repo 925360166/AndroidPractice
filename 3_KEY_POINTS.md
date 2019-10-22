@@ -78,6 +78,7 @@
     
 # 20、OkHttp框架分析
     https://www.jianshu.com/p/f9c6b5e04010
+    https://www.jianshu.com/p/d7eced552553
     
 # 21、Handler中有Loop死循环，为什么没有阻塞主线程，原理是什么？
     https://www.jianshu.com/p/ea7beaeeee16
