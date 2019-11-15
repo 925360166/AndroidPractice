@@ -69,15 +69,19 @@
 # 17、Android Handler机制之总目录
     https://www.jianshu.com/p/43bb31d8a742
     
-# 18、Android网络编程之——Socket编程
+# 18、这是一份详细 & 清晰的计算机网络基础 学习指南
+    https://www.jianshu.com/p/45d27f3e1196
+    
+# 19、Android网络编程之——Socket编程
     https://www.jianshu.com/p/fb4dfab4eec1
     https://www.jianshu.com/p/089fb79e308b
     
-# 19、Handler中有Loop死循环，为什么没有阻塞主线程，原理是什么？
+# 20、OkHttp框架分析
+    https://www.jianshu.com/p/f9c6b5e04010
+    https://www.jianshu.com/p/d7eced552553
+    
+# 21、Handler中有Loop死循环，为什么没有阻塞主线程，原理是什么？
     https://www.jianshu.com/p/ea7beaeeee16
     
-# 20、这是一份详细 & 清晰的计算机网络基础 学习指南
-    https://www.jianshu.com/p/45d27f3e1196
-    
-# 21、JVM的内存区域划分
+# 22、JVM的内存区域划分
     https://www.cnblogs.com/mrhgw/p/10819234.html
