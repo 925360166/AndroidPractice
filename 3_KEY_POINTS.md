@@ -78,3 +78,6 @@
     
 # 20、这是一份详细 & 清晰的计算机网络基础 学习指南
     https://www.jianshu.com/p/45d27f3e1196
+    
+# 21、JVM的内存区域划分
+    https://www.cnblogs.com/mrhgw/p/10819234.html
