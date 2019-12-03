@@ -53,6 +53,7 @@
         <activity android:name=".ScreenAdaptation.ScreenAdaptationActivity" />
         <activity android:name=".SocketTest.SocketTestActivity" />
         <activity android:name=".MyOkHttpTest.MyOkHttpActivity" />
+        <activity android:name=".MultiComponent.MultiComActivity" />
         <activity
             android:name="com.example.songwei.androidpractice.BgTransparentTest.BgTransparentActivity"
             android:theme="@style/common_dialog" />

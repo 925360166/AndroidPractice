@@ -64,4 +64,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     //okhttp3
     implementation 'com.squareup.okhttp3:okhttp:4.2.1'
+    implementation project(':common_lib')
 }

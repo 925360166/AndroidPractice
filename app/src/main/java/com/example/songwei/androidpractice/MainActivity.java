@@ -24,6 +24,7 @@ import com.example.songwei.androidpractice.HttpTest.HttpTestActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
 import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
 import com.example.songwei.androidpractice.MaterialDesign.TabLayoutActivity;
+import com.example.songwei.androidpractice.MultiComponent.MultiComActivity;
 import com.example.songwei.androidpractice.MyOkHttpTest.MyOkHttpActivity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerView2Activity;
 import com.example.songwei.androidpractice.RecyclerView.RecyclerViewActivity;
@@ -52,7 +53,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //逐个判断哪些权限未授权，将未授权的权限存储到mPermissionList中
     private List<String> mPermissionsDenied = new ArrayList<>();
-
 
 
     @Override
@@ -86,21 +86,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button18).setOnClickListener(this);
         findViewById(R.id.button19).setOnClickListener(this);
         findViewById(R.id.button20).setOnClickListener(this);
+        findViewById(R.id.button21).setOnClickListener(this);
+        findViewById(R.id.button22).setOnClickListener(this);
+        findViewById(R.id.button23).setOnClickListener(this);
+        findViewById(R.id.button24).setOnClickListener(this);
+        findViewById(R.id.button25).setOnClickListener(this);
+        findViewById(R.id.button26).setOnClickListener(this);
+        findViewById(R.id.button27).setOnClickListener(this);
+        findViewById(R.id.button28).setOnClickListener(this);
+        findViewById(R.id.button29).setOnClickListener(this);
+        findViewById(R.id.button30).setOnClickListener(this);
     }
 
     //动态申请权限
-    private void initPermissions(){
-        if (Build.VERSION.SDK_INT >= 23){
+    private void initPermissions() {
+        if (Build.VERSION.SDK_INT >= 23) {
             mPermissionsDenied.clear();
             //逐个判断是否还有未通过的权限
-            for(int i = 0; i < permissions.length; i++){
-                if(ContextCompat.checkSelfPermission(this, permissions[i]) != PackageManager.PERMISSION_GRANTED){
+            for (int i = 0; i < permissions.length; i++) {
+                if (ContextCompat.checkSelfPermission(this, permissions[i]) != PackageManager.PERMISSION_GRANTED) {
                     //添加未授权的权限到mPermissionsDenied中
                     mPermissionsDenied.add(permissions[i]);
                 }
             }
             //申请权限
-            if(mPermissionsDenied.size() > 0){
+            if (mPermissionsDenied.size() > 0) {
                 ActivityCompat.requestPermissions(this, permissions, mRequestCode);
             }
         }
@@ -111,16 +121,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         //是否有权限申请未被通过
         boolean hasPerDenied = false;
-        if(mRequestCode == requestCode){
-            for(int i = 0; i < grantResults.length; i++){
-                if(grantResults[i] == -1){
+        if (mRequestCode == requestCode) {
+            for (int i = 0; i < grantResults.length; i++) {
+                if (grantResults[i] == -1) {
                     hasPerDenied = true;
                     break;
                 }
             }
         }
         //有权限未被允许
-        if(hasPerDenied){
+        if (hasPerDenied) {
             Toast.makeText(this, "有权限被拒绝，请在设置页面允许所有权限，谢谢~", Toast.LENGTH_SHORT).show();
         }
     }
@@ -188,6 +198,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button20:
                 startActivity(MyOkHttpActivity.class);
+                break;
+            case R.id.button21:
+                startActivity(MultiComActivity.class);
                 break;
             default:
                 Toast.makeText(MainActivity.this, "无效跳转", Toast.LENGTH_SHORT).show();
