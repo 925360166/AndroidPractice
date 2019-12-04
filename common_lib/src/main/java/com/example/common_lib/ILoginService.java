@@ -1,6 +1,9 @@
 package com.example.common_lib;
 
 import android.content.Context;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 
 /**
  * Author: SongWei
@@ -10,4 +13,8 @@ import android.content.Context;
 public interface ILoginService {
 
     public void launchLoginActivity(Context context);
+
+    public Fragment getFragment(FragmentManager fragmentManager, int viewId, Bundle bundle);
+
+
 }

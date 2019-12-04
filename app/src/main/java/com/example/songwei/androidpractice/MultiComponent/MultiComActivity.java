@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.common_lib.ServiceFactory;
 import com.example.songwei.androidpractice.R;
@@ -29,6 +28,14 @@ public class MultiComActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //ILoginService
                 ServiceFactory.getInstance().getLoginService().launchLoginActivity(MultiComActivity.this);
+            }
+        });
+
+        findViewById(R.id.tv_go_login_container).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //ILoginService
+                ServiceFactory.getInstance().getLoginService().getFragment(getSupportFragmentManager(), R.id.container, new Bundle());
             }
         });
 

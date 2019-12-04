@@ -19,6 +19,10 @@ public class ServiceFactory {
     private IMineService mMineService;
 
     public ILoginService getLoginService(){
+        //此处防止模块为空
+        if(mLoginService == null){
+            mLoginService = new EmptyLoginService();
+        }
         return mLoginService;
     }
 

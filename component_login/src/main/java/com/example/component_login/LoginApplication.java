@@ -12,8 +12,15 @@ import com.example.common_lib.ServiceFactory;
  */
 public class LoginApplication extends Application implements IAppCompat {
 
+    private static Application application;
+
+    public static Application getApplication(){
+        return application;
+    }
+
     @Override
     public void initialize(Application app) {
+        application = app;
         ServiceFactory.getInstance().setLoginService(new LoginService());
     }
 }
