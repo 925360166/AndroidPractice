@@ -19,10 +19,12 @@ import com.example.songwei.androidpractice.AIDL.Messenger.MessengerActivity;
 import com.example.songwei.androidpractice.AIDL.Socket.TCPClientActivity;
 import com.example.songwei.androidpractice.CrashHandler.CrashActivity;
 import com.example.songwei.androidpractice.CustomViews.CustomViewsActivity;
+import com.example.songwei.androidpractice.Glide_Test.GlideTestActivity;
 import com.example.songwei.androidpractice.HandlerThread.HandlerThreadActivity;
 import com.example.songwei.androidpractice.HttpTest.HttpTestActivity;
 import com.example.songwei.androidpractice.ImageLoader.ImageLoaderActivity;
 import com.example.songwei.androidpractice.IntentService.IntentServiceActivity;
+import com.example.songwei.androidpractice.Keep_Alive.KeepAliveTestActivity;
 import com.example.songwei.androidpractice.MaterialDesign.TabLayoutActivity;
 import com.example.songwei.androidpractice.MultiComponent.MultiComActivity;
 import com.example.songwei.androidpractice.MyOkHttpTest.MyOkHttpActivity;
@@ -201,6 +203,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button21:
                 startActivity(MultiComActivity.class);
+                break;
+            case R.id.button22:
+                startActivity(GlideTestActivity.class);
+                break;
+            case R.id.button23:
+                startActivity(KeepAliveTestActivity.class);
                 break;
             default:
                 Toast.makeText(MainActivity.this, "无效跳转", Toast.LENGTH_SHORT).show();

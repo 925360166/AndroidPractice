@@ -54,10 +54,13 @@
         <activity android:name=".SocketTest.SocketTestActivity" />
         <activity android:name=".MyOkHttpTest.MyOkHttpActivity" />
         <activity android:name=".MultiComponent.MultiComActivity" />
+        <activity android:name=".Glide_Test.GlideTestActivity" />
         <activity
             android:name="com.example.songwei.androidpractice.BgTransparentTest.BgTransparentActivity"
             android:theme="@style/common_dialog" />
         <activity android:name=".MaterialDesign.TabLayoutActivity" />
+        <activity android:name=".Keep_Alive.KeepAliveTestActivity"/>
+        <activity android:name=".Keep_Alive.KeepAliveActivity"/>
 
         <!--所有的service-->
         <service
