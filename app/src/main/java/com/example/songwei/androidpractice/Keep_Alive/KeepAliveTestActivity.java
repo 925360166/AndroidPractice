@@ -68,10 +68,17 @@ public class KeepAliveTestActivity extends Activity {
 
     private void keepAliveOn(boolean isChecked) {
         Log.e(TAG, "keepAliveOn: " + (isChecked ? "On" : "Off"));
-
+        if(isChecked) {
+            SharedPreferences sp = this.getSharedPreferences(SHAREDPRE_KEEP_ALIVE, Context.MODE_PRIVATE);
+            sp.edit().putBoolean("keep_alive", isChecked).commit();
+        }
     }
 
     private void keepAliveOff(boolean isChecked) {
         Log.e(TAG, "keepAliveOff: " + (isChecked ? "On" : "Off"));
+        if(isChecked) {
+            SharedPreferences sp = this.getSharedPreferences(SHAREDPRE_KEEP_ALIVE, Context.MODE_PRIVATE);
+            sp.edit().putBoolean("keep_alive", !isChecked).commit();
+        }
     }
 }
